@@ -1,0 +1,25 @@
+{
+    "name": "l5starter/setting",
+    "description": "Laravel 5 Start, Package setting",
+    "type": "laravel-package",
+    "license": "MIT",
+    "homepage": "http://www.srisattha.com",
+    "authors": [
+        {
+            "name": "Wiwat Srisattha",
+            "email": "wiwat_srt@hotmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "l5starter/core": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "L5Starter\\Setting\\": "src/"
+        }
+    }
+}
