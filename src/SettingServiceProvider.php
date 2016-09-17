@@ -15,14 +15,14 @@ class SettingServiceProvider extends ServiceProvider
      */
     public function boot(SettingRepository $settingRepository)
     {
-        if (!$this->app->routesAreCached()) {
-            require __DIR__ . '/Http/routes.php';
+        if (! $this->app->routesAreCached()) {
+            require __DIR__.'/Http/routes.php';
         }
 
-        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'core-templates');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'core-templates');
         // Publishing File
-        $this->publishes([__DIR__ . '/../database/migrations/' => database_path('migrations')], 'migrations');
-        $this->publishes([__DIR__ . '/../database/seeds/' => database_path('seeds')], 'seeder');
+        $this->publishes([__DIR__.'/../database/migrations/' => database_path('migrations')], 'migrations');
+        $this->publishes([__DIR__.'/../database/seeds/' => database_path('seeds')], 'seeder');
 
         if ($settingRepository->setAll()) {
             // This one needs a little special attention

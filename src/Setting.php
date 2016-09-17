@@ -5,14 +5,13 @@ namespace L5Starter\Setting;
 use Eloquent as Model;
 
 /**
- * Class Setting
- * @package App\Models
+ * Class Setting.
  */
 class Setting extends Model
 {
     public $fillable = [
         'setting_key',
-        'setting_value'
+        'setting_value',
     ];
 
     /**
@@ -22,6 +21,6 @@ class Setting extends Model
      */
     protected $casts = [
         'setting_key' => 'string',
-        'setting_value' => 'string'
+        'setting_value' => 'string',
     ];
 }
