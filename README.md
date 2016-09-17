@@ -32,3 +32,13 @@ Running Seeders
 ``` bash
 $ php artisan db:seed --class=SettingsTableSeeder
 ```
+
+Add menu in `resources/views/vendor/l5starter/admin/partials/sidebar.blade.php`
+
+``` html
+<li class="{{ (Request::is('admin/settings*') ? 'active' : '') }}">
+    <a href="{{ route('admin.settings.index') }}">
+        <i class="fa fa-cog"></i> <span>{{ trans('l5starter::general.settings') }}</span>
+    </a>
+</li>
+```
