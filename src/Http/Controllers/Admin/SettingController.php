@@ -12,10 +12,10 @@ use Response;
 
 class SettingController extends Controller
 {
-    /** @var  SettingRepository */
+    /** @var SettingRepository */
     private $settingRepository;
 
-    function __construct(SettingRepository $settingRepo)
+    public function __construct(SettingRepository $settingRepo)
     {
         $this->settingRepository = $settingRepo;
     }
@@ -34,7 +34,7 @@ class SettingController extends Controller
 
         return view('core-templates::admin.settings.index')->with([
             'dateFormats' => $dateFormats,
-            'settings' => $settings
+            'settings' => $settings,
         ]);
     }
 
@@ -50,7 +50,7 @@ class SettingController extends Controller
             if (substr($key, 0, 8) == 'setting_') {
                 $skipSave = false;
                 $key = substr($key, 8);
-                if (!$skipSave) {
+                if (! $skipSave) {
                     $this->settingRepository->save($key, $value);
                 }
             }

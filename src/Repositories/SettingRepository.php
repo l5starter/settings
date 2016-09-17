@@ -10,7 +10,7 @@ use PDOException;
 class SettingRepository extends BaseRepository
 {
     /**
-     * Configure the Model
+     * Configure the Model.
      **/
     public function model()
     {
@@ -22,8 +22,9 @@ class SettingRepository extends BaseRepository
         try {
             $settings = $this->model->all();
             foreach ($settings as $setting) {
-                config(['settings.' . $setting->setting_key => $setting->setting_value]);
+                config(['settings.'.$setting->setting_key => $setting->setting_value]);
             }
+
             return true;
         } catch (QueryException $e) {
             return false;
