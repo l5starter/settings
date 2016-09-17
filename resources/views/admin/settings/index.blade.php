@@ -1,4 +1,4 @@
-@extends('core-templates::admin.layouts.master')
+@extends('l5starter::admin.layouts.master')
 
 @section('content-header')
     <h1>
