@@ -13,7 +13,7 @@
     <div class="box">
         <div class="box-body">
             {!! Form::open(['route' => 'admin.settings.update']) !!}
-            @include('core-templates::admin.settings.fields')
+            @include('l5starter::admin.settings.fields')
             {!! Form::close() !!}
         </div>
     </div>

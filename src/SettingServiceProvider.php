@@ -19,7 +19,7 @@ class SettingServiceProvider extends ServiceProvider
             require __DIR__.'/Http/routes.php';
         }
 
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'core-templates');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'l5starter');
         // Publishing File
         $this->publishes([__DIR__.'/../database/migrations/' => database_path('migrations')], 'migrations');
         $this->publishes([__DIR__.'/../database/seeds/' => database_path('seeds')], 'seeder');
