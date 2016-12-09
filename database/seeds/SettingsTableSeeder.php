@@ -17,7 +17,7 @@ class SettingsTableSeeder extends Seeder
                 'setting_value' => 'Laravel 5 Starter',
             ], [
                 'setting_key' => 'dateFormat',
-                'setting_value' => 'm/d/Y',
+                'setting_value' => 'd/m/Y',
             ], [
                 'setting_key' => 'resultsPerPage',
                 'setting_value' => '15',
