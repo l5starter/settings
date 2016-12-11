@@ -32,7 +32,7 @@ class SettingController extends Controller
         $settings = $this->settingRepository->all();
         $dateFormats = DateFormatter::dropdownArray();
 
-        return view('core-templates::admin.settings.index')->with([
+        return view('l5starter::admin.settings.index')->with([
             'dateFormats' => $dateFormats,
             'settings' => $settings,
         ]);
