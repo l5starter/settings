@@ -1,5 +1,5 @@
 
-# L5Start\Setting
+# L5Starter\Setting
 
 ## Installation
 
