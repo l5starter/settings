@@ -6,7 +6,7 @@
 In order to install Laravel 5, just add
 
 ``` php
-"l5starter/setting": "5.3.x-dev"
+"l5starter/setting": "5.4.x-dev"
 ```
 to your composer.json. Then run `composer install` or `composer update`.
 
