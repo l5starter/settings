@@ -12,10 +12,10 @@
         }
     ],
     "require": {
-        "l5starter/core": "5.4.x-dev"
+        "l5starter/core": "5.5.x-dev"
     },
     "require-dev": {
-        "phpunit/phpunit": "~4.0"
+        "phpunit/phpunit": "~6.0"
     },
     "autoload": {
         "psr-4": {
